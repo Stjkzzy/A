@@ -5,7 +5,13 @@ backend:
   site_domain: a-pink-three.vercel.app # 2、change this to your domain
   base_url: https://a-pink-three.vercel.app # 3、change this to your prod URL
   auth_endpoint: oauth # the oauth route provided by the integration
-
+environment:
+  development:
+    database: dev_db
+    debug: true
+  production:
+    database: prod_db
+    debug: false
 collections:
   - name: "note"
     label: "笔记"
