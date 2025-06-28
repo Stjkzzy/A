@@ -1,12 +1,5 @@
 backend:
-responsive:
-  enabled: true
-  breakpoints:
-    mobile: 480px
-    tablet: 768px
-    desktop: 1024px
-  stylesheets:
-    - "/responsive.css"
+
   name: github
   branch: main # change this to your branch
   repo: Stjkzzy/A # 1、change this to your repo
