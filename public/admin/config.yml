@@ -5,8 +5,7 @@ responsive:
     tablet: 768px
     desktop: 1024px
   stylesheets:
-    - "styles/main.css"
-    - "styles/responsive.css"
+    - "/responsive.css"
     
 backend:
 responsive:
@@ -16,8 +15,7 @@ responsive:
     tablet: 768px
     desktop: 1024px
   stylesheets:
-    - "styles/main.css"
-    - "styles/responsive.css"
+    - "/responsive.css"
   name: github
   branch: main # change this to your branch
   repo: Stjkzzy/A # 1、change this to your repo
@@ -32,8 +30,7 @@ responsive:
     tablet: 768px
     desktop: 1024px
   stylesheets:
-    - "styles/main.css"
-    - "styles/responsive.css"
+    - "/responsive.css"
   - name: "note"
     label: "笔记"
     folder: "src/content/note"
