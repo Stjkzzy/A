@@ -1,0 +1,37 @@
+在 YAML 文件中，通常用于配置而不是直接编写代码。若要实现手机自适应功能，通常是通过 CSS 媒体查询实现的，但 YAML 可以用来配置相关参数，例如断点、样式路径等。以下是一个示例，展示如何在 YAML 中配置手机自适应相关的参数：
+
+
+复制代码
+responsive:
+  enabled: true
+  breakpoints:
+    mobile: 480px
+    tablet: 768px
+    desktop: 1024px
+  stylesheets:
+    - "styles/main.css"
+    - "styles/responsive.css"
+说明：
+
+enabled: 是否启用响应式设计。
+breakpoints: 定义不同设备的断点，例如手机、平板和桌面。
+stylesheets: 指定需要加载的样式表文件。
+配合 CSS 使用：
+
+在 responsive.css 文件中，可以这样定义媒体查询：
+
+
+复制代码
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+通过这种方式，YAML 文件可以作为配置文件，结合 CSS 实现手机自适应功能。如果你需要更具体的实现方式，可以告诉我，我会进一步调整内容！ 😊
+
