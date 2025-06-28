@@ -7,14 +7,7 @@ backend:
   base_url: https://a-pink-three.vercel.app # 3、change this to your prod URL
   auth_endpoint: oauth # the oauth route provided by the integration
 collections:
-responsive:
-  enabled: true
-  breakpoints:
-    mobile: 480px
-    tablet: 768px
-    desktop: 1024px
-  stylesheets:
-    - "/responsive.css"
+
   - name: "note"
     label: "笔记"
     folder: "src/content/note"
