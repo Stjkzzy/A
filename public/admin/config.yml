@@ -1,8 +1,3 @@
-module:
-  name: "example-module"
-  settings:
-    timeout: "{{ 60 if environment == 'production' else 30 }}"
-    retries: "{{ 5 if environment == 'production' else 3 }}"
 backend:
   name: github
   branch: main # change this to your branch
