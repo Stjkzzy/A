@@ -1,4 +1,4 @@
-// import fs from "node:fs";
+import fs from "node:fs";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
@@ -14,7 +14,7 @@ import vercel from "@astrojs/vercel";
 // Remark plugins
 import remarkDirective from "remark-directive"; // Handle ::: directives as nodes
 import { remarkAdmonitions } from "./src/plugins/remark-admonitions"; // Add admonitions
-// import { remarkReadingTime } from "./src/plugins/remark-reading-time";
+import { remarkReadingTime } from "./src/plugins/remark-reading-time";
 import remarkMath from "remark-math"; // Add LaTeX support
 import remarkGemoji from "remark-gemoji"; // Add emoji support
 
@@ -50,8 +50,7 @@ export default defineConfig({
         short_name: "仙人掌主题",
         description: siteConfig.description,
         lang: siteConfig.lang,
-        // icon: "public/icon.svg", // the source for generating favicon & icons
-        /** 
+        icon: "public/icon.svg", // the source for generating favicon & icons
         icons: [
             {
                 src: "icons/apple-touch-icon.png", // used in src/components/BaseHead.astro L:26
@@ -69,7 +68,6 @@ export default defineConfig({
                 type: "image/png",
             },
         ],
-         **/
         start_url: "/",
         background_color: "#1d1f21",
         theme_color: "#2bbc8a",
