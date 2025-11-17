@@ -22,15 +22,12 @@ stylesheets: 指定需要加载的样式表文件。
 
 
 复制代码
-@media (max-width: 480px) {
-  body {
-    font-size: 14px;
+@media (max-width: 767px) {
+  header {
+    text-align: center;
   }
-}
-
-@media (max-width: 768px) {
-  body {
-    font-size: 16px;
+  .nav {
+    flex-direction: column;
   }
 }
 通过这种方式，YAML 文件可以作为配置文件，结合 CSS 实现手机自适应功能。如果你需要更具体的实现方式，可以告诉我，我会进一步调整内容！ 😊
